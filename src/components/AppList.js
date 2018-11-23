@@ -14,7 +14,7 @@ class AppList extends React.Component {
     }
   };
 
-  onChangeNewItem(newItem) {
+  addNewItem(newItem) {
     const item = {
       description: newItem.description,
       id: newItem.id
@@ -29,7 +29,7 @@ class AppList extends React.Component {
   render() {
     return (
       <div>
-        <AppForm changeNewItem={this.onChangeNewItem.bind(this)} />
+        <AppForm changeNewItem={this.addNewItem.bind(this)} />
         <h3>App List</h3>
         {this.state.items.map((item) => {
           return (<p key={item.id}>{item.description}</p>)

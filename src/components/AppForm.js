@@ -24,6 +24,12 @@ class AppForm extends React.Component {
   onChangeNewItem = (event) => {
     event.preventDefault();
     this.props.changeNewItem(this.state);
+
+    // set AppForm state back to blank
+    this.setState(() => ({
+      description: '',
+      id: ''
+    }));
   };
 
   render() {
