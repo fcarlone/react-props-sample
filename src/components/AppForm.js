@@ -35,7 +35,7 @@ class AppForm extends React.Component {
   render() {
     return (
       <div>
-        <h3>App Form</h3>
+        <h4>App Form - from AppForm Component</h4>
         <form>
           <input
             type="text"

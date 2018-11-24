@@ -30,7 +30,7 @@ class AppList extends React.Component {
     return (
       <div>
         <AppForm changeNewItem={this.addNewItem.bind(this)} />
-        <h3>App List</h3>
+        <h4>App List - from AppList Component</h4>
         {this.state.items.map((item) => {
           return (<p key={item.id}>{item.description}</p>)
         })}

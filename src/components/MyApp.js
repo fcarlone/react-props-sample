@@ -7,6 +7,7 @@ class MyApp extends React.Component {
     return (
       <div>
         <h1>My App</h1>
+        <h3>Passing Data Between Parent and Child Components</h3>
         <AppList />
       </div>
     )
