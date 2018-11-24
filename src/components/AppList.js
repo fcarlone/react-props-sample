@@ -20,7 +20,11 @@ class AppList extends React.Component {
       id: newItem.id
     };
 
-    const addItems = [item, ...this.state.items];
+    const addItems = [...this.state.items, item];
+    /*
+      const addItems = this.state.items.concat(item);
+    */
+
     this.setState({
       items: addItems
     });
